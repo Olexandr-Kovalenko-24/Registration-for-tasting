@@ -4,6 +4,7 @@
 
 :root {
     font-family: 'Playfair Display', serif;
+    font-size: 16px;
 }
 
 .bgc {
@@ -37,8 +38,7 @@
 
 .header {
     position: relative;
-    font-size: 36px;
-    top: 0px;
+    font-size: 2rem;
     line-height: 150%;
     padding: 10px 50px;
     box-sizing: border-box;
@@ -50,24 +50,24 @@
 .line {
     border-bottom: 1px solid #FFFFFF;
     align-self: center;
-    top: 0px;
-    width: 118px;
-    height: 0px;
+    width: 10vw;
 }
 
 .row {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin: 0;
+}
+
+.row input {
+    flex-grow: 0.4;
 }
 
 .text {
     font-family: 'Montserrat', sans-serif;
-    font-style: normal;
     text-align: center;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 150%;
     color: #FFFFFF;
 }
@@ -85,9 +85,11 @@
 }
 
 input {
+    font-family: 'Montserrat', sans-serif;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #FFFFFF;
+    padding-bottom: 0.5rem;
 }
 
 input::placeholder {
@@ -98,10 +100,9 @@ input::placeholder {
     text-transform: uppercase;
     background-color: transparent;
     font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 2.5rem;
     border: 1px solid #FFFFFF;
     color: #FFFFFF;
 }
