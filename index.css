@@ -29,18 +29,20 @@
 
 .wrapper {
     width: 38vw;
-    height: 75vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: stretch;
+    margin-bottom: 13vh;
 }
 
 .header {
     position: relative;
     font-size: 2rem;
     line-height: 150%;
-    padding: 10px 50px;
+    width: 90%;
+    align-self: center;
     box-sizing: border-box;
     background-color: #282828;
     text-align: center;
@@ -60,7 +62,7 @@
 }
 
 .row input {
-    flex-grow: 0.4;
+    width: 45%;
 }
 
 .text {
@@ -72,16 +74,19 @@
     color: #FFFFFF;
 }
 
-.left, .right {
+.left,
+.right {
     position: absolute;
-    top: 0%;
+    top: 5%;
+    width: 18vw;
 }
 
 .left {
-    left: 0%;
+    left: 10%;
 }
+
 .right {
-    right: 0%;
+    right: 10%;
 }
 
 input {
@@ -108,7 +113,9 @@ input::placeholder {
 }
 
 @media screen and (max-width: 576px) {
-    img, .border {
+
+    img,
+    .border {
         display: none;
     }
 }
